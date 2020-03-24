@@ -20,6 +20,16 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/book',
+                    component: () => import(/* webpackChunkName: "book" */ '../components/page/Book.vue'),
+                    meta: { title: '书目管理' }
+                },
+                {
+                    path: '/addBook',
+                    component: () => import(/* webpackChunkName: "addBook" */ '../components/page/AddBook.vue'),
+                    meta: { title: '添加书籍' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }

@@ -67,6 +67,16 @@ export default {
                     title: '基础表格'
                 },
                 {
+                    icon: 'el-icon-lx-cascades',
+                    index: 'book',
+                    title: '书目管理'
+                },
+                {
+                    icon: 'el-icon-lx-cascades',
+                    index: 'addBook',
+                    title: '添加书籍'
+                },
+                {
                     icon: 'el-icon-lx-copy',
                     index: 'tabs',
                     title: 'tab选项卡'

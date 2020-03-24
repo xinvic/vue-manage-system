@@ -9,8 +9,13 @@ import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 import './assets/css/icon.css';
 import './components/common/directives';
 import 'babel-polyfill';
-
+import axios from 'axios';
 Vue.config.productionTip = false;
+axios.defaults.baseURL = 'http://localhost:8088/v1';
+//axios.defaults.headers.common['Authorization'] = 'AUTH_TOKEN';
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+Vue.prototype.axios = axios
+
 Vue.use(VueI18n);
 Vue.use(ElementUI, {
     size: 'small'
